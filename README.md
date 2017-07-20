@@ -2,12 +2,15 @@
 
 Cleveridge SSH Scanner
 ======================
-####IMPORTANT:
+
+#### IMPORTANT:
+
 >This tool is for ethical testing purpose only.   
 >Cleveridge and its owners can't be held responsible for misuse by users.   
 >Users have to act as permitted by local law rules.
 
-##What is the Cleveridge SSH Scanner
+## What is the Cleveridge SSH Scanner
+
 The Cleveridge SSH Scanner is a SSH Brute Force tool written in python. The tool tries to get access to machines (IPv4) on the SSH port (22). When the machines is accessible on port 22, the tool brute forces the ssh login with the most common default user names and passwords.
 
 The tool offers you the options to attack
@@ -16,17 +19,20 @@ The tool offers you the options to attack
 - IP's listed in a file
 
 
-##Tested
+## Tested
+
 At this moment the Cleveridge SSH Scanner is only tested in a Linux Kali environment with Python 2.7 installed.     
 The Cleveridge SSH Scanner is also successfully tested in combination with Proxychains 3.1 (http://proxychains.sourceforge.net/) and Tor (https://www.torproject.org/) to hide the ip of the user.
 
+Make sure that ``pexpect`` is part of the remote machine's Python installation when you first execute Cleveridge SSH Scanner.
 
-##How to use in Linux
+## How to use in Linux
+
 1. Download the Cleveridge SSH Scanner files into a directory of your choise and chmod it so you are allowed to execute it.   
     
 2. In Terminal, go to the Cleveridge SSH Scanner directory and execute:   
     ```./cl_ssh_scan.py  ```       
-     
+
 or     
       
 1. Be sure you have Tor and Proxychains 3.1 installed.   
@@ -47,19 +53,21 @@ or
     ```service tor start             ```  
     ```proxychains ./cl_ssh_scan.py  ``` 
 
-##On the first run...
+## On the first run...
+
 ...the Cleveridge SSH Scanner will automatically install the following folders:    
 - log : in this folder all the log files of scans will be saved    
 - cnf : configurations folder    
 - data : in this folder the user can store files containing lists of ip addresses he/she wants to scan   
 
-##Contact Info 
+## Contact Info 
+
 **Cleveridge** - Ethical Hacking Lab   
 De Brulen 28   
 2370 Arendonk   
 Belgium   
 https://cleveridge.org
 
-##Developer
+## Developer
 **Erwin De Laat** [ redN00ws ]     
 https://twitter.com/erwindelaat
